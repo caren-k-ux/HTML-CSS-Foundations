@@ -65,10 +65,16 @@
 
         <form action="https://httpbin.org/post" target="_blank" method="post" title="In this form the submitted resrlts will open in a new browser tab as the target is  target=_blank in quotes">
             <label for="fname">First Name:</label>
-            <input type="text" name="fname" id="fname" placeholder="first name"><br><br>
+            <input type="text" name="fname" id="fname" placeholder="first name" autocomplete="on"><br><br>
 
             <label for="lname">Last Name:</label>
-            <input type="text" name="lname" id="lname" placeholder="last name"><br><br>
+            <input type="text" name="lname" id="lname" placeholder="last name" autocomplete="on"><br><br>
+
+            <label for="email">Email address:</label>
+            <input type="email" name="email_adress" id="email" placeholder="Email Adress" autocomplete="email"><br><br>
+
+            <label for="user_password">Password</label>
+            <input type="password" name="pwd" id="user_password" autocomplete="new-password">
 
             <p>Gender: </p>
             <input type="radio" name="gender" id="gender" value="Female">
@@ -153,8 +159,24 @@
             </ul>
         </blockquote></p>
 
-        <p style="background-color: blanchedalmond;padding: 10px;"><strong>Tip:</strong> Always use POST if the form data contains sensitive or personal information!</p>
+        <p style="background-color: blanchedalmond;padding: 10px;color: black;"><strong>Tip:</strong> Always use POST if the form data contains sensitive or personal information!</p>
+
         <hr>
+
+        <p style="color: honeydew;font-size: x-large;font-family: 'Times New Roman', Times, serif;">The Autocomplete Attribute</p>
+        <p>The <mark style="background-color: transparent;color: brown;">autocomplete</mark> attribute specifies whether a form should have autocomplete on or off.</p>
+
+        <p>When autocomplete is on, the browser automatically complete values based on values that the user has entered before.</p>
+
+        <hr>
+        <p style="color: honeydew;font-size: x-large;font-family: 'Times New Roman', Times, serif;">The Novalidate Attribute</p>
+        <p>The novalidate attribute is a boolean attribute</p>
+        <p>when present, it specifies that the form-data (input) should not be validated when submitted.</p>
+        <p><strong>Example:</strong></p>
+        <p>A form with a novalidate attribute</p>
+        <p><<mark style="background-color:transparent; color:brown;">form action="https://httpbin.org/post" novalidate</mark>></p>
+
+
 
     </body>
 
