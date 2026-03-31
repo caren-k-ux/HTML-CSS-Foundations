@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Link Buttons "styling"</title>
+        <style>
+            a:link, a:visited {
+                background-color: rgb(54, 155, 155);
+                color: whitesmoke;
+                padding: 15px 25px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+            }
+
+            a:hover, a:active {
+                background-color: chocolate;
+                color: cornsilk;
+            }
+
+        </style>
+    </head>
+    <body>
+        <p>Click to open the link below.</p>
+        <button onclick="document.location='https://www.geeksforgeeks.org/'">GeeksforGeeks</button>
+        <p>This is a link styled as a button:</p>
+        <a href="https://www.geeksforgeeks.org/" target="_blank">GeeksforGeeks</a>
+    </body>
+
+</html>

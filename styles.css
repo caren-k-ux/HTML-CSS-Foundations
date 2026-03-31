@@ -1,0 +1,21 @@
+body {
+    background-color: rgb(70, 120, 164);
+}
+h1 {
+    color: rgb(15, 20, 20);
+}
+p {
+    color: rgb(125, 79, 19);
+}
+
+a:link, a:visited {
+    background-color: peru;
+    color: whitesmoke;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+a:hover, a:active {
+    background-color: palevioletred;
+}

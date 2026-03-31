@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML Tables</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="HTML webpage showing introduction to tables in html and how to create them tables.">
+        <meta name="author" content="Me Khakasa">
+        <meta name="keywords" content="Tables, styles, cells, rows, columns">
+        <meta http-equiv="refresh" content="30">
+        <link rel="icon" type="image/x-icon" href="/images/pexels-i-m-reyaansh-1162486-35388618.jpg">
+        <style>
+            body {
+                background-image: url('/images/pexels-diana.jpg');
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+            }
+
+            p {
+                color:brown;
+                font-family: 'Courier New', Courier, monospace;
+            }
+            
+            table{
+                font-family: 'Courier New', Courier, monospace;
+                color: dodgerblue;
+                border-collapse: collapse;
+                width: 100%;
+
+            }
+
+            td, th {
+                border: 1px solid black;
+                text-align: left;
+                padding: 10 px;
+                border-style: outset;
+                border-color: rgb(56, 3, 3);
+            }
+
+            tr:nth-child(even) {
+                background-color: darkslategray;
+            }
+
+            td:nth-child(even), th:nth-child(even) {
+                background-color: darkslategrey;
+            }
+
+            tr:hover {
+                background-color: rgb(110, 107, 106);
+            }
+
+        </style>
+    </head>
+    <body>
+        <h1 style="color: darksalmon;">HTML Tables</h1>
+        <p>HTML tables allow web developers to arrange data into rows and columns</p>
+        <p style="font-size: x-large; color: darkslategrey;">Define an HTML Table</p>
+        <p>A HTML table consists of table cells inside rows and columns</p>
+        <p>Each table cell is defined by a <mark style="color: rgb(60, 60, 179); background-color: transparent;">td</mark> tag.</p>
+        <p style="background-color: burlywood; padding: 20px;margin: 0px;">td stands for table data</p>
+        <p>Everything between the td tag is the content of the table cell</p>
+        <p style="font-size: x-large; color: darkslateblue;">Table Rows</p>
+        <p>Each table row starts with a tr tag and ends with a /tr tag.</p>
+        <p style="background-color: burlywood; padding: 20px;margin: 0px;">tr stands for table row.</p>
+        <p>You can have as many rows as you like in a table; just make sure that the number of cells is the same in each row.</p>
+        <p style="font-size: x-large; color: darkslateblue;">Table Headers.</p>
+        <p>Sometimes you want your cells to be the table header cells. In those cases us the <mark style="background-color:transparent;color: blue;">th</mark> tag instead of the <mark style="color: blue;background-color: transparent;">td</mark> tag.</p>
+
+         <p style="background-color: burlywood; padding: 20px;margin: 0px;">th stands for table header.</p>
+        <p>Bu default <mark style="color: blue;background-color: transparent;">th</mark> elements are bold and centered, but you can change  that with CSS.</p>
+        <p style="font-size: x-large; color: darkslateblue;">How To Add a Border</p>
+        <p>To add a border, use the CSS border property on table, th, and td elements:</p>
+        <p>To avoid having double borders like in the example above, set the CSS border-collapse property to collapse.</p>
+        <p>This will make the borders collapse into a single border</p>
+        <p>Here is a sample table: </p>
+        <p style="font-size: x-large; color: darkslateblue;">Round Table Borders</p>
+        <p>With the border-radius property, the boeders get rounded cornere:</p>
+
+        <table>
+            <tr>
+                <th>Company</th>
+                <th>Contact</th>
+                <th>Country</th>
+
+            </tr>
+            <tr>
+                <td>Alfreds Futterkiste</td>
+                <td>Maria Anders</td>
+                <td>Germany</td>
+            </tr>
+
+            <tr>
+                <td>Centro comercial Moctezuma</td>
+                <td>Francisco Chang</td>
+                <td>Mexico </td>
+            </tr>
+
+            <tr>
+                <td>Ernst Handel</td>
+                <td>Roland Mendel</td>
+                <td>Austria</td>
+            </tr>
+
+            <tr>
+                <td>Island Trading</td>
+                <td>Helen Bennet</td>
+                <td>UK</td>
+            </tr>
+
+            <tr>
+                <td>Laughing Bacchus Winecellars</td>
+                <td>Yoshi Tannamuri</td>
+                <td>Canada</td>
+            </tr>
+
+            <tr>
+                <td>Maggazzini Alimentari Riuniti</td>
+                <td>Giovanni Rovelli</td>
+                <td>Italy</td>
+            </tr>
+            
+        </table>
+        <hr style="background-color:transparent; height: 50px;">
+        <table style="border-spacing: 300px; border-color:darkblue;">
+            <tr>
+                <th colspan="2">Name</th>
+                <th>Age</th>
+            </tr>
+
+            <tr>
+                <td>Jill</td>
+                <td>Smith</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td>Eve</td>
+                <td>Jackson</td>
+                <td>56</td>
+            
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <th>Name</th>
+                <td>Jill</td>
+            </tr>
+            <tr>
+                <th rowspan="2">Phone</th>
+                <td>0715450790</td>
+            </tr>
+            <tr>
+                <td>0118937237</td>
+            </tr>
+        </table>
+
+    </body>
+</html>

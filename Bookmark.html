@@ -1,0 +1,104 @@
+<!--HTML links can be used to create bookmarks, so that readers can jump to specific parts of a web page.
+Bookmarks can be useful if a web page is very long
+To create a bookmark - first create the bookmark, then add a link to it
+when the link is clicked, the page will scroll down or up to the location with the bookmark-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Create Bookmarks(HTML Links)</title>
+        <style>
+            body {
+                background-color: whitesmoke;
+                color: darkslategrey;
+            }
+            a:link {
+                color: mediumaquamarine;
+                background-color: transparent;
+                text-decoration: none;
+
+            }
+            a:visited {
+                color: coral;
+                background-color: transparent;
+                text-decoration: none;
+            }
+            
+            a:active {
+                color: brown;
+                background-color: transparent;
+                text-decoration: none;
+            }
+
+            a:hover {
+                color: crimson;
+                background-color: transparent;
+                text-decoration: underline;
+            }
+        </style>
+    </head>
+    <body>
+        <p>first, use the <i style="color: brown;" title="Used to create a bookmark.">id</i> attribute to create a bookmark.</p>
+        <p><a href="#C1">Jump to Chapter 1</a></p>
+        <p><a href="#C2">Jump to Chapter 2</a></p>
+        <p><a href="#C4">Jump to Chapter 4</a></p>
+        <p><a href="#C5">Jump to Chapter 5</a></p>
+        <p><a href="#C9">Jump to Chapter 9</a></p>
+        <p><a href="#C10">Jump to Chapter 10</a></p>
+        <p><a href="#C14">Jump to Chapter 14</a></p>
+        <p><a href="#Summary">Chapter Summary</a></p>
+
+        <h2 id="C1">Chapter 1</h2>
+        <p> This chapter explains bla bla bla</p>
+
+        <h2 id="C4">Chapter 2</h2>
+        <p> This chapter explains bla bla bla</p>
+
+        <h2>Chapter 3</h2>
+        <p> This chapter explains bla bla bla</p>
+
+        <h2 id="C4">Chapter 4</h2>
+        <p> This chapter explains bla bla bla</p>
+
+        <h2 id="C5">Chapter 5</h2>
+        <p> This chapter explains bla bla bla</p>
+
+        <h2>Chapter 6</h2>
+        <p> This chapter explains bla bla bla</p>
+
+        <h2>Chapter 7</h2>
+        <p> This chapter explains bla bla bla</p>
+
+
+        <h2>Chapter 8</h2>
+        <p> This chapter explains bla bla bla</p>
+
+
+        <h2 id="C9">Chapter 9</h2>
+        <p> This chapter explains bla bla bla</p>
+
+
+        <h2 id="C10">Chapter 10</h2>
+        <p> This chapter explains bla bla bla</p>
+
+
+        <h2>Chapter 11</h2>
+        <p> This chapter explains bla bla bla</p>
+
+        <h2>Chapter 12</h2>
+        <p> This chapter explains bla bla bla</p>
+
+        <h2>Chapter 13</h2>
+        <p> This chapter explains bla bla bla</p>
+
+        <h2 id="C14">Chapter 14</h2>
+        <p> This chapter explains bla bla bla</p>
+
+        <h2 id="Summary">Chapter Summary</h2>
+        <ul>
+            <li>Use the <mark style="background-color: transparent; color: brown;">id</mark> attribute(id="value") to define bookmarks in a page.</li>
+            <li>Use the <mark style="background-color: transparent; color: brown;">href</mark> arribute(href="#value") to link to the bookmark.</li>
+            <li> you can also add alink to a bookmark on another page; ...href="html_demo#C4">jump to chapter4...</li>
+        </ul>
+
+    </body>
+</html>

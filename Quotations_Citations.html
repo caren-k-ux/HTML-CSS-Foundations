@@ -1,0 +1,48 @@
+<!--In this chapter we will go through the 
+<blockqquote>, <q>,<abbr>, <address>,<cite>, and <bdo> HTML elements.-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Quotations and Citations </title>
+    </head>
+    <body style="background-color: dimgrey; font-family: 'Courier New', Courier, monospace;">
+        <p>Here is a quote from WWF's website:</p>
+        <!-- <blockquote> element defies a section that is quoted from another source
+        Browsers usually indent <blockquote> elements-->
+        <blockquote cite="https://www.worldwideleife.org/who/index.html">
+            For 60 years, WWF has worked to help people and nature thrive. 
+            As the world's leading conservation organization, WWF works in
+            nearly 100 countries. At every level, we collaborate with people 
+            around the world to develop and deliver innovative solutions that
+            protect communities, wildlife, and the places they live.
+        </blockquote>
+        <!--The HTML <q> tag defines a short quotations
+        Browsers normally insert quotation marks around the quotation-->
+        <p>WWF's goal is to:<br><q>Build a future where people live in harmony with nature</q></p>
+        <!-- HTML <abbr> element defines abbreviation or
+        an acronym, like "HTML","CSS", "Mr", "Dr", "ASAP", "ATM"
+        Tip:Use the global title attribute to show the description for the
+        abbreviation when you gover a mouse over the element.-->
+        <p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+        <p>Marking up abbreviations can give useful information to browsers, translation systems and search-engines.</p>
+        <!--HTML <adress> for contact information
+        <adress> tah defines contact information for the author/owner of a document or article
+        <address> element usually renders in italic, 
+            and browsers will always add a line break before and after the element-->
+
+        <address>
+            Written by John Doe.<br>
+            Visit us at:<br>
+            Example.com<br>
+            Box 564, Disneyland<br>
+            USA
+        </address>
+        <!--cite element for work title; defines the title for a creative work(e.g)a book, a poem, a song-->
+        <p>Note: A persons name is not the title of their work; cite renders italic</p>
+        <p><cite>The Scream</cite> by Edvard Munch. Painted in 1893.</p>
+        <!--<bdo> for Bi-Directional Override;-->
+        <p> The html<bdo> tag is used to override the current text direction</p>
+        <p><bdo dir="rtl">This text will be written from right to left.</bdo></p>
+    
+    </body>
+</html>

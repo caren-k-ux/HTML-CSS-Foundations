@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML Form Attributes</title>
+        <style>
+            body 
+            {
+                background-color: darkslategrey;
+                color: whitesmoke;
+            }
+
+            table
+            {
+                width: 100%;
+                border-collapse: collapse;
+                font-family: default; 
+                color: bisque; 
+    
+            
+            }
+
+            th, td
+            {
+                border-bottom: 1px solid black;
+                text-align: left;
+                background-color: rgb(49, 46, 46);
+                padding: 10px;
+            }
+            
+            th
+            {
+                background-color: rgb(73, 50, 50);
+            }
+
+            tr :hover 
+            {
+                background-color: rgb(82, 67, 48);
+            }
+
+            blockquote :hover 
+            {
+                background-color: brown;
+            }
+            blockquote
+            {
+                padding-top: 0.5px;
+                padding-bottom: 0.5px;
+                background-color: rgb(175, 141, 128);
+            }
+
+        </style>
+    </head>
+    <body>
+        <p style="color: honeydew;font-size: xx-large;font-family: 'Times New Roman', Times, serif;">HTML Form Attributes</p>
+        <p>This webpage describes the diff attributes for the HTML <<mark style="background-color:transparent; color: brown;">form</mark>> element.</p>
+        <hr>
+        <p style="color: honeydew;font-size: x-large;font-family: 'Times New Roman', Times, serif;">The Action Attribute</p>
+        <p>The action attribute defines the action to be perfomed when the form is submitted.</p><br>
+
+        <p>Usually, the form data is sent to a file on the server when the user clicks the submit button.</p><br>
+        <p>The form data  below is sent to a php file. This file contains a server side script that handles the  form data:</p>
+        <hr>
+        <p style="color: honeydew;font-size: large;font-family: 'Times New Roman', Times, serif;">Example</p>
+        <p>On submit, send form data to "action_page.php":</p>
+
+        <form action="https://httpbin.org/post" target="_blank" method="post" title="In this form the submitted resrlts will open in a new browser tab as the target is  target=_blank in quotes">
+            <label for="fname">First Name:</label>
+            <input type="text" name="fname" id="fname" placeholder="first name"><br><br>
+
+            <label for="lname">Last Name:</label>
+            <input type="text" name="lname" id="lname" placeholder="last name"><br><br>
+
+            <p>Gender: </p>
+            <input type="radio" name="gender" id="gender" value="Female">
+            <label for="gender">Female</label><br>
+
+            <input type="radio" name="gender" id="gender" value="Male">
+            <label for="gender">Male</label><br><br>
+
+            <p>Education level:</p>
+            <input type="radio" name="literacy" id="literacy" value="Primary School">
+            <label for="literacy">Primary School</label><br>
+
+            <input type="radio" name="literacy" id="literacy" value="Secondary school">
+            <label for="literacy">Secondary School</label><br>
+
+            <input type="radio" name="literacy" id="literacy" value="University">
+            <label for="literacy">University</label><br><br>
+
+            <input type="submit" value="Submit">
+        </form>
+        <p><strong>Tip:</strong> If the action attribute is ommited, the action is set to the current page.</p>
+
+
+        <p style="color: honeydew;font-size: x-large;font-family: 'Times New Roman', Times, serif;">The Target Attribute</p>
+        <p>The <mark style="color: brown; background-color: transparent;">target</mark> attribute specifies where to display the response that is received after submitting the form.</p>
+        <p>The <mark style="color: brown; background-color: transparent;">target</mark> attribute can have one of the following values:</p>
+
+        <table>
+            <tr>
+                <th>Value</th>
+                <th>Description</th>
+            </tr>
+
+            <tr>
+                <td>_blank</td>
+                <td>The response is displayed in a new window or tab.</td>
+
+            </tr>
+
+            <tr>
+                <td>_self</td>
+                <td>The response is displayed in the current window.</td>
+            </tr>
+
+            <tr>
+                <td>_parent</td>
+                <td>The response is displayed in the parent frame</td>
+            </tr>
+
+            <tr>
+                <td>_top</td>
+                <td>The response is displayed in the full body window</td>
+            </tr>
+            <tr>
+                <td><i>framename</i></td>
+                <td>The response is displayed in a named iframe</td>
+            </tr>
+        </table>
+        <p style="color: honeydew;font-size: x-large;font-family: 'Times New Roman', Times, serif;">The Method Attribute</p>
+        <p>The method attribute specifies the HTTP method should be used when submitting form data.</p>
+        <p>The form data can be send as URL variables (with method="get") or as HTTP post transaction (with method="post" ).</p>
+        <p>The default HTTP method when submitting form data is GET</p>
+        <p><strong>Notes on GET:</strong></p>
+
+        <p><blockquote>
+            <ul list-style-type="disc">
+                <li>Appends the form data to the URL, in the name/value pairs</li>
+                <li>NEVER use GET to send sensitive data! (the submitted form data is visible in the URL!)</li>
+                <li>The length of the URL is limited (2048 characters)</li>
+                <li>Useful for form sumissions where a user wants to bookmark the result</li>
+                <li>GET is good for non-secure data, like query strings in Google</li>
+            </ul>
+        </blockquote></p>
+
+        <p><strong>Noes on POST:</strong></p>
+        <p><blockquote>
+            <ul list-style-type="disc">
+                <li>Appends the formof data inside the body of the HTTP request (the submitted form data is not shown in the URL)</li>
+                <li>POST has no size limtitations, and can be used to send large amounts of data.</li>
+                <li>Form submissions with POST cannot be bookmarked</li>
+
+            </ul>
+        </blockquote></p>
+
+        <p style="background-color: blanchedalmond;padding: 10px;"><strong>Tip:</strong> Always use POST if the form data contains sensitive or personal information!</p>
+        <hr>
+
+    </body>
+
+</html>

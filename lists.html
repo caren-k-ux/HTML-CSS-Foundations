@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HTML Lists</title>
+    <style>
+
+      body 
+      {
+        margin: 40px;
+        background-color: rgb(166, 177, 144);
+      }
+      table 
+      {
+        font-family: 'Courier New', Courier, monospace;
+        border-collapse: collapse;
+        width: 100%;
+        color: rgb(203, 203, 192);
+        background-color: rgb(55, 53, 53);
+        border: 1px solid rgb(47, 23, 3);
+        margin: auto;
+
+      }
+      th {
+        background-color: rgb(20, 21, 21);
+      }
+      th, td 
+      {
+        border-bottom:1px solid black; /* shows only the line under the row */
+        text-align: left;
+        padding: 10px;
+      }
+
+      tr ::hover
+      {
+        background-color: brown;
+      }
+
+    </style>
+  </head>
+  <body>
+    <ul style="list-style-type: disc;">
+      <li>Tea
+        <ul>
+          <li>Black Tea</li>
+          <li>Green Tea</li>
+          <li>Hibiscus Tea</li>
+        </ul>
+      </li>
+      <li>Coffee
+        <ul>
+          <li>Arabica Coffee</li>
+          <li>Robusta</li>
+          <li>Latte</li>
+        </ul>
+        </li>
+        <li>Water</li>
+        <li>Juice
+          <ul>
+            <li>Orange juice</li>
+            <li>Apple juice</li>
+            <li>Pineapple juice</li>
+            <li>Mixed juice</li>
+          </ul>
+        </li>
+      </li>
+      <li>Fruits
+        <ul>
+          <li>Apple</li>
+          <li>Banana</li>
+          <li>Cherry</li>
+          <li>Plum</li>
+          <li>Pineapple</li>
+          <li>Avacado</li>
+          <li>Orange</li>
+        </ul>
+      </li>
+      <li>vegitables
+        <ul>
+          <li>Tomato</li>
+          <li>Kales</li>
+          <li>Spinach</li>
+          <li>Cabbage</li>
+          <li>Onion</li>
+          <li>Carrots</li>
+        </ul>
+      </li>
+    </ul>
+
+    <ul>
+      <li>Tea
+        <ul>
+          <li>Black Tea</li>
+          <li>White Tea</li>
+          <li>Green Tea</li>
+          <li>Rose Tea</li>
+        </ul>
+      </li>
+      <li>Birds
+        <ul style="list-style-type:square">
+          <li>Parrot</li>
+          <li>Hen</li>
+          <li>Eagle</li>
+          <li>Crow</li>
+          <li>Ostrich</li>
+        </ul>
+      </li>
+    </ul>
+    <p><b>HTML Description Lists</b></p>
+    <p>The dl tag defines the description list, the dt tag defines the term(name), and the dd tag describes each term</p>
+    <dl>
+      <dt>Coffee</dt>
+      <dd>black hot drink</dd>
+      <dt>Milk </dt>
+      <dd>White cold drink.</dd>
+    </dl>
+    <hr>
+    <dl>
+      <dt>Girl</dt>
+      <dd>A young woman</dd>
+      <dt>Boy</dt>
+      <dd>A young man</dd>
+    </dl>
+    <h3>Unordered HTML Lists</h3>
+    <p>The HTML ul tag defines an unordered(bulleted) list.</p>
+    <p>The CSS <mark style="background-color: transparent;color: brown;">list-style-type</mark> property is used to define the style of the list item marker. It can have one of the following values:</p>
+    <table>
+      <tr>
+        <th>Value</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+         <td>disc</td>
+         <td>Sets the list item marker to a bullet(default)</td>
+
+      </tr>
+      <tr>
+        <td>circle</td>
+        <td>Sets the list item marker to a circle</td>
+      </tr>
+
+      <tr>
+        <td>square</td>
+        <td>Sets the list item marker to a square</td>
+      </tr>
+
+      <tr>
+        <td>none</td>
+        <td>The list items will not be marked</td>
+      </tr>
+    </table>
+
+    <p style="font-size: large;color: brown;">Example - Disc</p>
+    <ul style="list-style-type: disc;">
+      <li>Milk</li>
+      <li>Coffee</li>
+      <li>Tea</li>
+    </ul>
+
+    <p style="font-size: large;color: brown;">Example - Circle</p>
+
+    <ul style="list-style-type: circle;">
+      <li>Water</li>
+      <li>Juice</li>
+      <li>Soda</li>
+    </ul>
+
+    <p style="font-size: large;color: brown;">Example - Square</p>
+
+    <ul style="list-style-type: square;">
+      <li>Bread</li>
+      <li>Chapati</li>
+      <li>Rice</li>
+    </ul>
+
+    <p style="font-size: large;color: brown;">Example - None</p>
+
+    <ul style="list-style-type: none;">
+      <li>Cooking</li>
+      <li>Playing</li>
+      <li>Drawing</li>
+    </ul>
+    
+    
+
+</html>
+
+

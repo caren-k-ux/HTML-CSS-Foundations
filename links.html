@@ -1,0 +1,86 @@
+<!--HTML links are hyperlinks
+You can click and jump to another document; 
+when you hover a mouse over a html link, the mouse will turn into a hand-->
+<!--Syntax <a href="url">link text</a>-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML Links and Link colors</title>
+        <!--<link rel="stylesheet" href="styles.css">-->
+        <style>
+            a:link {
+                color: green;
+                background-color: transparent;
+                text-decoration: none;
+            }
+            a:visited {
+                color: pink;
+                background-color: transparent;
+                text-decoration: none;
+            }
+            
+            a:hover {
+                color: red;
+                background-color: transparent;
+                text-decoration: none;
+            }
+
+            a:active {
+                color: yellow;
+                background-color: transparent;
+                text-decoration: underline;
+            }
+            body {
+                background-color: rgb(91, 107, 140);
+                color: whitesmoke;
+            }
+        </style>
+        
+    </head>
+    <body>
+        <p>Here, an unvisted link will be green withe no underline.<br>A visited link will be pink with no underline.<br>an active link will be yellow and underlined.<br>In addition, when a mousing over a link(a:hover) it will becaome red and underlined.</p>
+        <a href="https://www.w3schools.com/">Visit W3schools.com!</a>
+        <p>By default,links will apper as follows in all browsers:</p>
+        <blockquote cite="https://www.w3schools.com/html/">An unvisited link is underlined and blue.<br>A visited link is underlined and purple<br>An active link is underlined and red <blockquote>
+        <!--Links can of course be styled with CSS, to get another look!-->
+        <p style="color: brown;"><b>HTML Links - The target Attribute</b></p>
+        <p>The target attribute specifies where to open the linked document.</p>
+        <p>The <em style="color: darkseagreen;">target</em> attribute can have one of the following values.</p>
+        <ul>
+            <li><strong style="color: brown;">_self</strong> - Default. Opens the document in the same window/tab as it was clicked.</li>
+            <li><strong style="color: brown;">_blank</strong> - Opens a document in a new window or tab.</li>
+            <li><strong style="color: brown;">_parent</strong> - Opens the document in the parent frame</li>
+            <li><strong style="color: brown;">_top</strong> Opens the document in the full body of the window.</li>
+            <p>Using _blank to open the linked document in a new window or tab</p>
+            <p>Unvisted - blue<br>Visited - purple<br>Active link - red</p>
+            <a href="https://www.edclub.com/" target="_blank">Visit edclub.com!</a>    
+        </ul>
+        <h2>Absolute URLs vs. Relative URLs</h2>
+        <h2>Absolute URLs</h2>
+        <p><a href="https://www.youtube.com/" target="_blank">Youtube</a></p>
+        <p><a href="https://www.google.com/" target="_blank">Google</a></p>
+
+        <h2>Relative URLs</h2>
+        <p><a href="html_images.asp" target="_blank">HTML Images</a></p>
+        <p><a href="/css/default.asp">CSS Tutorial</a></p>
+
+        <h2>use an Image as a Link</h2>
+        <p>To use an image as a link, just put the <img> tag inside the <a> tag</p>
+        <p>The image below is a link, click on it</p>
+        <a href="https://www.geeksforgeeks.org/" target="_blank"><img src="smiley.gif" alt="geeksforgeeks website" style="width: 42px; height: 42px;"></a>
+        <h2>Link to an Email Address</h2>
+        <p>Use <i style="color: cadetblue;">mailto:</i> inside the <i style="color: cadetblue;">href</i> attribute to create a link that opens the user's email program(to let them send a new email):</p>
+        <p><a href="mailto:someone@example.com">send mail</a></p>
+        <h2>Button as a Link</h2>
+        <p>Click the button to go to Youtube</p>
+        <button onclick="document.location='https://www.youtube.com';" style="a:visited, a:hover{background-color: burlywood; color: chocolate};">Youtube</button>
+        <hr>
+        <button onclick="document.location='https://www.edclub.com/'">edclub</button>
+        <h2>Link Titles</h2>
+        <p>Just use the title attribute to specify extra info about the link or element</p>
+        <p>#Hover over the link to get its destination</p>
+        <a href="https://www.w3schools.com/html/"target="_blank" title="Go to W3schools HTML section ">This is a link</a>
+
+
+    </body>
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+
+    <title>HTML FORMS W3schools</title>
+
+    <style>
+      body
+      {
+        background-color: rgb(167, 154, 136);
+      }
+
+      table
+      {
+        border-collapse: collapse;
+        margin: auto;
+        width: 100%;
+        color: rgb(236, 253, 253);
+        font-family: 'Times New Roman', Times, serif;
+      }
+      
+      td, th 
+      {
+        border-bottom: 1px solid black;
+        padding: 10px;
+        text-align: left;
+
+      }
+
+      th
+      {
+        background-color: rgb(60, 69, 69);
+      }
+
+      td 
+      {
+        background-color: rgb(22, 127, 127);
+      }
+
+      tr :hover 
+      {
+        background-color: rgb(83, 83, 130);
+      }
+    </style>
+
+
+  </head>
+
+  <!-- A HTML form is used to collect user input. The user input is most often sent to a server for processing. -->
+  <body >
+    <p>The html <mark style="background-color: transparent; color:brown;">form</mark> element is used to create an HTML form for user input:</p>
+    <p>The <mark style="background-color: transparent; color: brown;">form</mark> element  is a containter for different types of  input elements, such as:</p>
+    <ul style="list-style-type: circle;">
+      <li>text fields</li>
+      <li>checkboees</li>
+      <li>radio buttons</li>
+      <li>submit buttons</li>
+      <li>dropdowns</li>
+
+    </ul>
+
+    <p style="font-family: fantasy;font-size: xx-large; color: honeydew;">The input element</p>
+    <p>The HTML input element is the most used form element.</p>
+    <p>An <mark style="color: brown;background-color: transparent;">input</mark> element can be displayed in many ways depending on the <mark style="background-color: transparent;color: brown;">type</mark> attribute</p>
+    <p>Here are some examples:</p>
+    <table >
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+
+      <tr> 
+        <td>input type="text"</td>
+        <td>Displays a single-line text input field</td>
+      </tr>
+
+      <tr>
+        <td>input type="radio"</td>
+        <td>Displays a radio button ( for selecting one of many choices)</td>
+      </tr>
+
+      <tr>
+        <td>input type="checkbox"</td>
+        <td>Displays a checkbox (for selecting zero or more of many choices)</td>
+      </tr>
+
+      <tr>
+        <td>input type="submit"</td>
+        <td>Displays a submit button(for submitting the form)</td>
+      </tr>
+
+      <tr>
+        <td>input type="button"</td>
+        <td>Displays a clickable button</td>
+      </tr>
+
+    </table>
+
+    <p style="font-size: xx-large;color: honeydew;">Text Fields</p>
+    <p>The <<mark style="background-color:transparent; color: brown;">input type="text"</mark>> defines a single-line input field for text</p>
+
+    <!-- Example -->
+     <p>A form with input fiels for text</p>
+     <p>Note: the form itself is not visible. Also note that the default width of an input field is 20 characters.</p>
+    <form>
+      <label for="fname">First name:</label><br>
+      <input type="text" id="fname" name="fname" placeholder="First Name"><br><br>
+
+      <label for="lname">Last Name</label><br>
+      <input type="text" id="lname" name="lname" placeholder="Last name">
+      <p ><strong>Note:</strong> The box above is  prefilled with the "First Name" as the default value.</p>
+      <p>To do this we use the  value attribute or the placeholder attributte.</p>
+
+    </form>
+
+    <p style="color: honeydew; font-size: xx-large;">The <<mark style="background-color: transparent; color: honeydew;">label</mark>> Element</p>
+    <p>Notice the use of the <mark style="background-color: transparent;color: brown;">label</mark> element in the example above.</p>
+    <p>The label element is useful for screenreader users, because the screen-reader will read out loud when the user focuses on the input elements.</p>
+    <p>The label element also helps users who have difficulty clicking on very small regions ( such as radio buttons or checkboxes) - because when the user clicks the text within the label element, it toggles the radio button/checkbox.</p>
+    <p>The <mark style="background-color: transparent;color: brown;">for</mark> attribute of the <<mark style="background-color:transparent; color: brown;">label</mark>> tag should be equal to the <mark style="background-color: transparent; color: brown;">id</mark> attribute of the <<mark style="background-color:transparent; color: brown;">input</mark>> element to bind them together.</p>
+  
+    <hr>
+
+    <p style="color: honeydew; font-size: xx-large;">Radio Buttons</p>
+    <p>The <<mark style="background-color:transparent; color: brown;">input type="radio</mark>> defines the radio button.</p>
+    <p>Radio buttons let a user select ONE of a limited number of choices.</p>
+    <p style="font-size: xx-large;">Example</p>
+    <p>Choose you favourite web language:</p>
+
+    <form>
+      <input type="radio" id="html" name="fav_language" value="HTML">
+      <label for="html">HTML</label><br><br>
+      
+      <input type="radio" id="css" name="fav_language" value="CSS">
+      <label for="css">CSS</label><br><br>
+
+      <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+      <label for="javascript">JavaScript</label><br><br>
+    </form>
+
+    <p>When using radio buttons as the type value is mandatory so as to tell the bowser what the users choice is.</p><br>
+    <hr>
+
+    <p style="font-size: xx-large;color: honeydew;">Checkboxes</p>
+    <p>The <<mark style="background-color: transparent; color: brown;">input type="checkbox"</mark>> defines a checkbox</p>
+    <p>Checkboxes let a user select ZERO or MORE options of a limited number of choices.</p>
+
+    <p style="font-size: xx-large;">Example</p>
+    <p>A form with checkboxes:</p>
+    <p>Which food are you gonna pick; You can only pick more than one choice.</p>
+
+    <form>
+      <input type="checkbox" id="menu1" name="food_chosen" value="Chapati">
+      <label for="menu1">Chapati</label><br><br>
+
+      <input type="checkbox" id="menu2" name="food_chosen" value="Fries">
+      <label for="menu2">Fries</label><br><br>
+
+      <input type="checkbox" id="menu3" name="food_chosen" value="Mandazi">
+      <label for="menu3">Mandazi</label><br><br>
+
+      <input type="checkbox" id="menu4" name="food_chosen" value="Potato Crisps">
+      <label for="menu4">Potato Crisps</label><br><br>
+      <input type="button" value="OK">
+    </form>
+    <hr>
+
+    <p style="font-size: xx-large;color: honeydew;">The Submit Button</p>
+    <p>The <<mark style="background-color: transparent; color: brown;">input type="submit"</mark>> defines a  button for submitting the data to a form-handler.</p>
+    <p>The form-handler is typicaly a file server with a script for processing input data.</p>
+    <p>The form-handler is specified in the form's <i style="color: brown;"> action</i> attribute.</p>
+
+    <p style="font-size: xx-large;">Example</p>
+    <p>A form with submit button:</p>
+    <form action="#">
+
+      <label for="cname">Course Name:</label>
+      <input type="text" name="student_details" id="cname" placeholder="Course Name"><br><br>
+
+      <label for="regNumber">Registration Number:</label>
+      <input type="text" name="student_details" id="regNumber" placeholder="Registration Number"><br> <br>
+
+      <label for="college">College:</label>
+      <input type="text" name="student_details" id="college" placeholder="Enter the college you are in i.e copas"><br><br>
+
+      <label for="institution">University:</label>
+      <input type="text" name="student_details" id="institution" placeholder="Enter the name of the institution you are in"><br><br>
+
+      <input type="submit" value="Submit">
+
+
+    </form>
+
+
+  </body>
+</html>
