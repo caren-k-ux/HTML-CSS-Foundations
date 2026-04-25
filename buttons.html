@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML buttons</title>
+        <style>
+            body
+            {
+                background-color: transparent;
+                color: rgb(17, 17, 17);
+                padding: 20px;
+            }
+
+            hr
+            {
+                border: none;
+                border-top: 1px solid rgb(146, 135, 135, 0.3);
+            }
+            h1
+            {
+                font-weight: lighter;
+            }
+            h2
+            {
+                font-weight: lighter;
+            }
+            span
+            {
+                color: brown;
+            }
+
+            .mytestbtn
+            {
+                background-color: green;
+                color: white;
+                border-radius: 8px;
+                border: none;
+                padding: 10px;
+                cursor: pointer;
+            }
+
+            .mytestbtn:hover
+            {
+                background-color: darkcyan;
+            }
+
+            .paragr
+            {
+                background-color: beige;
+                padding: 10px;
+                color: black;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>HTML Buttons</h1>
+
+        <hr>
+        <p>Buttons let users interact with a webpage. They can submit forms, run Javascript, or trigger different actions when clicked.</p>
+        <hr>
+        <h2>HTML Button</h2>
+        <p>The HTML <<span>button</span>> element defines a clickable button.</p>
+        <p>By itself, the button does nothing until you add action to it.</p>
+        <p><strong>Example:</strong></p>
+        <button>Click me</button>
+
+        <hr>
+        <h2>Styling HTML Buttons</h2>
+        <p>Buttons are often styled with CSS</p>
+        <button class="mytestbtn">Green Button</button>
+
+        <hr>
+        <h2>Disabled Buttons</h2>
+        <p>Use the <span>disabled</span> attribute to make a button unclickable:</p>
+        <p><strong>Example:</strong></p>
+        <button disabled>Disabled Button</button> 
+        <hr>
+        <div class="paragr">
+            <p><strong>Tip:</strong> Disabled buttons cannot be clicked and usually appear faded.</p>
+        </div> <br>
+        <hr>
+        <hr>
+
+        <h2>Button with Javascript</h2>
+        <p>You can run JavaScript when the user clicks a button using the <span>onclick</span> attribute:</p>
+        <button onclick="alert('Hello!')">Click Me</button>
+        <p><button onclick="alert('Have a Nice Day SweetHeart!')">Click Me</button></p>
+        <hr>
+        <h2>Button Types</h2>
+        <p>The <span>type</span> attribute defines what a button does when clicked. There are three button types:</p>
+        <p>
+        
+            <ul>
+                <li><span>type="button"</span> - A normal clickable button(does nothing by default)</li>
+                <li><span>type="submit"</span> - Submits a form</li> 
+                <li><span>type="reset"</span> - Resets all  form fields</li>
+            </ul>
+            
+        </p>
+        <p><button type="button" title="normal button; does nothing by default">Normal Button</button></p>
+        <p><button type="submit" title="submits a form" >Submit</button></p>
+        <p><button type="reset" title="Resets all form fields">Reset</button></p>
+        <p>Buttons are often used inside <span style="text-decoration: underline; color: white;">forms</span></p>
+        <p><strong>Note:</strong></p>
+        <p>A <span>submit</span> button sends the form data to the server, while a <span>reset</span> button clears the form:</p>
+
+        <div class="paragr">
+            <p><strong>Note:</strong> You should always specify the <span>type</span> attribute. Inside a form, the default type is <span>submit</span>, and browsers may behave differently if the type is ommited.</p>
+        </div>
+
+    </body>
+</html>

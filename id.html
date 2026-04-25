@@ -1,79 +1,107 @@
 <!DOCTYPE html>
 <html>
-<body>
+    <head>
+        <title>HTML id Attribute</title>
+        <style>
+            hr
+            {
+                border: none;
+                border-top: 1px solid rgba(20, 19, 19, 0.3);
+            }
 
-<p><a href="#C4">Jump to Chapter 4</a></p>
-<p><a href="#C10">Jump to Chapter 10</a></p>
+            body
+            {
+                padding: 30px;
+                background-color:rgb(176, 202, 176, 0.5);
+            }
 
-<h2>Chapter 1</h2>
-<p>This chapter explains ba bla bla</p>
+            #myHeader
+            {
+                color: rgb(28, 80, 82);
+                background-color: antiquewhite;
+                padding: 20px;
+                text-align: center;
+                cursor: pointer;
+            }
 
-<h2>Chapter 2</h2>
-<p>This chapter explains ba bla bla</p>
+            .paragraph
+            {
+                background-color: burlywood;
+                padding: 20px;
+            
+            }
 
-<h2>Chapter 3</h2>
-<p>This chapter explains ba bla bla</p>
+            span
+            {
+                color: brown;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>HTML id Attribute</h1>
+        <hr>
+        <p><a href="#myHeader">Click Here to go to My Header Heading</a></p>
+        <p><a href="#chapter_summary">Click Here to go to the Chapter Summary</a></p>
+        <p>The HTML id attribute is used to specify a unique id for an HTML element.</p>
+        <p>You cannot have more than one element with the same id in an HTML document.</p>
+        <hr><br>
+        <h2>The id Attribute</h2>
+        <p>The id attribute specifies a unique id for an HTML element. The value of the id attribute must be unique within the HTML document.</p>
 
-<h2 id="C4">Chapter 4</h2>
-<p>This chapter explains ba bla bla</p>
+        <p>The id attribute is used to point to a specific style declaration in a style sheet. It is also used by JavaScript to access and manipulate the element with the specific id.</p>
+        <p>The syntax for id is: write a hash character(#), followed by the id name. Then, define the CSS properties within curly braces{}.</p>
+        <p>In the following example we have an  h1 element that points to the id name "myHeader". This h1 element will be styled according to the <span style="color: brown;">#myHeader</span> style definition in the head section:</p>
+        <h1 id="myHeader" style="cursor: pointer;">My Header</h1>
+        <div class="paragraph">
+        <p><strong>Note:</strong> The id name is case sensitive!</p>
+        <p><strong>Note:</strong> The id name must contain at least one character, cannot start with a number, and must not contain whitespaces (spaces, tabs, etc.).</p>
+        </div>
+        <hr>
+        <h2>Difference Between Class and ID</h2>
+        <p>A class name can be used  by multiple HTML elements, while an id name must only be used by one HTML element within the page: </p>
+        <hr>
 
-<h2>Chapter 5</h2>
-<p>This chapter explains ba bla bla</p>
+        <h2>HTML Bookmarks with ID and Links</h2>
+        <p>HTML bookmarks  are used to allow readers to jump to specific parts of a webpage.</p>
+        <p>Bookmarks can be useful if your page is very long.</p>
+        <p>To use a bookmark, you must first create it, and the add a link to it.</p>
+        <p>Then, when the link is clicked, the page will scroll to the location with the bookmark.</p>
+        <p>First, create a bookmark with the <span style="color: brown;">id</span> attribute:</p>
+        <p>Then, add a link to the bookmark ("Jump to chapter 4"), from within the same page: using the a element  and the href attribute with a #idname;</p>
+        <p>Or add a link  to the bookmark ("Jump to Chapter 4"), from another page:</p>
+        <p><strong>Example:</strong></p>
+        <a href="div.html#flex_id" target="_blank">Click here to go the div page where Items are aligned horizontally using flex</a>
+        <hr>
 
-<h2>Chapter 6</h2>
-<p>This chapter explains ba bla bla</p>
+        <h2>Using the id Attribute in JavaScript</h2>
+        <p>The <span>id</span> attribute can also be used by Javascript to erform some tasks for that specific element.</p>
 
-<h2>Chapter 7</h2>
-<p>This chapter explains ba bla bla</p>
+        <p>JavaScript can access an element with as specific iid with the <span>getElementById()</span> method:</p>
+        <button onclick="displayResult()">Change the "My Header" text</button>
 
-<h2>Chapter 8</h2>
-<p>This chapter explains ba bla bla</p>
+        <script>
+            function displayResult() 
+            {
+                document.getElementById("myHeader").innerHTML ="Have a nice day!";
+            }
 
-<h2>Chapter 9</h2>
-<p>This chapter explains ba bla bla</p>
+        </script>
 
-<h2 id="C10">Chapter 10</h2>
-<p>This chapter explains ba bla bla</p>
+        <hr>
+        <h2>Chapter Summary</h2>
+        <p id="chapter_summary">
+            <blockquote>
+                <ul>
+                    <li>The <span>id</span> attribute is used to specify a unique id for an HTML element.</li>
+                    <li>The value of the <span>id</span> attribute must be unique within the HTML document</li>
+                    <li>The <span>id</span> attribute is used by CSS and JavaScrip to style/select a specfic element</li>
+                    <li>The value of the <span>id</span> attribute is case sensitive</li>
+                    <li>The <span>id</span> attribute is also used to create HTML bookmarks</li>
+                    <li>JavaScript can access an element with a specific id with the <span>getElementById()</span> method</li>
+                </ul>
+            </blockquote>
+        </p>
 
-<h2>Chapter 11</h2>
-<p>This chapter explains ba bla bla</p>
-
-<h2>Chapter 12</h2>
-<p>This chapter explains ba bla bla</p>
-
-<h2>Chapter 13</h2>
-<p>This chapter explains ba bla bla</p>
-
-<h2>Chapter 14</h2>
-<p>This chapter explains ba bla bla</p>
-
-<h2>Chapter 15</h2>
-<p>This chapter explains ba bla bla</p>
-
-<h2>Chapter 16</h2>
-<p>This chapter explains ba bla bla</p>
-
-<h2>Chapter 17</h2>
-<p>This chapter explains ba bla bla</p>
-
-<h2>Chapter 18</h2>
-<p>This chapter explains ba bla bla</p>
-
-<h2>Chapter 19</h2>
-<p>This chapter explains ba bla bla</p>
-
-<h2>Chapter 20</h2>
-<p>This chapter explains ba bla bla</p>
-
-<h2>Chapter 21</h2>
-<p>This chapter explains ba bla bla</p>
-
-<h2>Chapter 22</h2>
-<p>This chapter explains ba bla bla</p>
-
-<h2>Chapter 23</h2>
-<p>This chapter explains ba bla bla</p>
-
-</body>
+        
+    </body>
 </html>
-

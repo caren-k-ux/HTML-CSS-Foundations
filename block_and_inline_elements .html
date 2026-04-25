@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            HTML Block and Inline Elements
+        </title>
+        <style>
+            body
+            {
+                background-color: #1d2a35 !important;
+                color: white ;
+                font-size: medium;
+                padding: 30px;
+                
+            
+            }
+            h1 
+            {
+                font-weight: lighter;
+            }
+            h2
+            {
+                font-weight: lighter;
+            }
+
+            hr 
+            {
+                border: none;
+                border-top: 1px solid rgba(238, 233, 233, 0.1);
+                margin: 20px 0;
+            }
+            mark
+            {
+                background-color: transparent;
+                color: brown;
+            }
+
+            .p_element
+            {
+                padding:10px 0px 10px 10px;
+                border: 1px solid green;
+                width: 100%;
+                box-sizing: border-box;
+            }
+            div
+            {
+                max-width: auto;
+                border: 1px solid rgba(238, 233, 233, 0.1);
+                padding: 0px 20px 0px 20px;
+                display: block;
+            }
+
+            .example
+            {
+                background-color: rgb(84, 86, 86);
+                border: 1px solid #1d2a35;
+                border-radius: 8px;
+                padding: 0px 10px 10px;
+            }
+            .example button
+            {
+                background-color: rgb(126, 158, 126);
+                border-radius: 8px;
+                padding: 10px;
+            }
+
+            .example_display
+            {
+                background-color: #1d2a35;
+                border-radius: 8px;
+                margin-bottom: 10px;
+                padding: 0px 0px 0px 10px;
+                width: auto;
+            }
+
+            .list
+            {
+                background-color: rgba(145, 139, 130, 0.1);
+                border: 1px solid #1d2a35;
+                border-radius: 8px;
+                max-height: 200px;
+            }
+            
+            .list ol :hover
+            {
+                color: #3e3c3c;
+                background-color: rgb(190, 163, 154);
+            }
+
+            .list
+            {
+                color: lightcoral;
+                background-image: url(images/pexels-hilalbulbul-18245117.jpg);
+                background-size: cover;
+                background-attachment: fixed;
+                background-repeat: no-repeat;
+            }
+
+            /* 
+                To keep it straight for web projects, remember that CSS shorthand usually follows a clockwise pattern
+                (Top, Right, Bottom, Left).
+                  - 2 values: margin: [top/botom] [left/right];
+                  - 3 values: margin: [top] [left/right] [bottom];
+                  - 4 values: margin: [top] [right] [bottom] [left];
+            */
+        </style>
+
+    </head>
+    <body>
+        <div>
+        <h1>HTML BLOCK and Inline Elements</h1><br>
+
+        <hr>
+        <p>Every HTML element has a default display value, dependng on what type of element it is.</p>
+        <p>The two most common display values are block and inline.</p>
+
+        <hr>
+        <h2>Block-level Elements</h2>
+        <p>A block-level element alwways starts on  a  new line, and the browsers automatically add some space ( a margin) before and after the start of the element.</p>
+        <p>A block-level element always takes up the full width available (stretches out to the left and right as far as it can).</p>
+        <p>Two commonly used block elements are: <<mark>p</mark>> and <<mark>div</mark>>. </p>
+        <p>The <i>p</i> element defies a paragraph in a  HTML document.</p>
+        <p>The  <i>div</i> element  defines a division or a section in an HTML document.</p>
+        <p class="p_element">The <<mark style="color: white;">p</mark>> element is a  block-level element.</p>
+        <p class="p_element">The  <<mark style="color: whitesmoke;">div</mark>> element is a block-level element</p>
+
+        <div class="example">
+            <h2>Example</h2>
+            <div class="example_display">
+                <p><<mark>p</mark>> Hello World <<mark>p</mark>></p> <<mark>div</mark>> Hello World <<mark>div</mark>></p>
+
+            </div>
+
+            <button type="submit"> Try it Yourself >></button>
+
+        </div>
+
+
+        <p>Here are the block-level elements in HTML:</p>
+        <div class="list">
+        <ol type="I">
+            <li>
+                address
+            </li>
+            <li>div</li>
+            <li>article</li>
+            <li>aside</li>
+            <li>blockquote</li>
+            <li>canvas</li>
+            <li>dd</li>
+            <li>h1-h6</li>
+            <li>noscript</li>
+        </ol>
+
+        </div>
+        <hr>
+
+
+        <h2>Inline Elements</h2>
+        <p>An inline element does not start on a new line.</p>
+        <p>An inline element only takes up as much width as neccesary.</p>
+        <p>This is <span style="border: 1px solid green; padding: 5px ;"> a span element inside </span> a paragraph.</p>
+
+        <p>Here are the inline elements in HTML:</p>
+        <p>a abbr acronym b bdo big br button cite code dfn em i img  input kbd label map </p>
+
+        <p style="background-color: antiquewhite; border: 1px solid #1d2a35; padding: 10px;color: black;"><strong>Note: </strong> An inline element cannot contain a block-level element! </p>
+        <hr>
+
+        <h2>The <<mark style="color:white;">div</mark>> Element</h2>
+        <p>The div element is often used as a container for other HTML elements.</p>
+        <p>The div element has no required attributes, but style, class and id are common.</p>
+        <p>When used together with CSS, the element can be used to style  blocks of content.</p>
+
+        <hr>
+        <h2>The <<mark style='color:white;'>span</mark>> Element</h2>
+        <p>The span element is an inline container used to mark up a part of a text, or part of a document.</p>
+        <p>The span element has no required attributes, but style, class and id are common.</p>
+        <p>When used together with CSS, the span element can be used to style parts of the text:</p>
+        <hr>
+        <h1>Chapter Summary</h1>
+        <ul style="list-style-type: circle;">
+            <li>
+                A block-level element always starts on a new line and takes up the full width available
+            </li>
+            <li>An inline element does not start on a new line and it only takes up as much width as necessary</li>
+            <li>The div element is a block-level element and is often used as a container for other HTML elements</li>
+            <li>The span element is an inline container used to mark up a part of a text, or a part of a document</li>
+        </ul>
+
+        </div>
+    </body>
+</html>
